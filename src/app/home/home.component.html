@@ -1,0 +1,23 @@
+<main>
+  <h1>Bienvenue aux Burgers de ta Maman</h1>
+
+  <button (click)="bonApp()">Commandez</button>
+
+  <section *ngIf="isInterested">
+    <h2>Nos burgers du moment</h2>
+
+    <div>
+      <div class="card">
+        <figure>
+          <img [src]="bNowPicture" alt="burgersNow" />
+        </figure>
+
+        <ul class="card-content">
+          <li *ngFor="let burger of burgersNow">
+            <a [routerLink]="['/burgers']">{{ burger }}</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+</main>

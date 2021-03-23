@@ -1,0 +1,26 @@
+header {
+  nav {
+    color: whitesmoke;
+    background: linear-gradient(to bottom, #000d16, #000f17);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    div {
+      max-width: 20%;
+      img {
+        display: block;
+        max-height: 3rem;
+      }
+    }
+
+    ul {
+      max-width: 50%;
+      display: flex;
+      list-style: none;
+      a {
+        margin-left: 2rem;
+      }
+    }
+  }
+}

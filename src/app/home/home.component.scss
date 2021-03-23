@@ -1,0 +1,50 @@
+main {
+  text-align: center;
+
+  button {
+    margin: 5rem auto 0 auto;
+    width: 20rem;
+    padding: 1.5rem 0;
+    color: white;
+    border-radius: 20px;
+    background-color: #000d16;
+    cursor: pointer;
+    box-shadow: white 5px 5px 5px;
+    outline: none;
+    font-family: "Dancing Script", cursive;
+
+    font-size: 3rem;
+    &:hover {
+      background-color: lighten($color: #000d16, $amount: 10);
+    }
+  }
+  section {
+    color: #13283f;
+    h2 {
+      margin: 2rem 0;
+    }
+    .card {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      figure {
+        img {
+          width: 30rem;
+          border-radius: 20px;
+        }
+      }
+
+      ul {
+        margin-left: 2rem;
+        list-style: none;
+        font-size: 3rem;
+        a {
+          &:hover {
+            color: whitesmoke;
+          }
+        }
+      }
+    }
+  }
+}

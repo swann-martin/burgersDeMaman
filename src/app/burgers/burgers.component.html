@@ -1,0 +1,18 @@
+<section>
+  <h1>Nos burgers</h1>
+  <section class="cards">
+    <div class="card" *ngFor="let burger of allBurgers">
+      <img [src]="burger.picture" alt="fond" />
+      <h2>{{ burger.name }}</h2>
+      <div class="card__content">
+        <p><span>Prix :</span> {{ burger.price }} €</p>
+        <p><span>ingrédients :</span> {{ burger.ingredients }}</p>
+      </div>
+      <button (click)="order(burger)">Le commander</button>
+    </div>
+  </section>
+
+  <div>
+    <p>Panier : {{ basket }}</p>
+  </div>
+</section>
