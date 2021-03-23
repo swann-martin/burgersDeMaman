@@ -5,10 +5,14 @@
     </div>
 
     <ul>
-      <li><a [routerLink]="['home']">Home</a></li>
-      <li><a [routerLink]="['about']">About</a></li>
-      <li><a [routerLink]="['burgers']">Nos Burgers</a></li>
-      <li><a [routerLink]="['forms']">Contact US</a></li>
+      <li><a [routerLink]="['home']" routerLinkActive="visited">Home</a></li>
+      <li><a [routerLink]="['about']" routerLinkActive="visited">About</a></li>
+      <li>
+        <a [routerLink]="['burgers']" routerLinkActive="visited">Nos Burgers</a>
+      </li>
+      <li>
+        <a [routerLink]="['forms']" routerLinkActive="visited">Contact US</a>
+      </li>
     </ul>
   </nav>
 </header>
