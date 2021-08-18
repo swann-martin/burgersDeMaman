@@ -1,25 +1,33 @@
 header {
+  width: 100vw;
   nav {
     color: whitesmoke;
     background: linear-gradient(to bottom, #000d16, #000f17);
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 2rem;
+    padding: 1rem;
     div {
-      max-width: 20%;
+      max-width: 30rem;
       img {
         display: block;
         max-height: 3rem;
+        max-width: 3rem;
       }
     }
 
     ul {
-      max-width: 50%;
+      max-width: 40rem;
       display: flex;
       list-style: none;
+      @media screen and(max-width:600px) {
+        flex-direction: column;
+      }
       a {
         margin-left: 2rem;
+        @media screen and(max-width:600px) {
+          font-size: 1rem;
+        }
       }
     }
   }

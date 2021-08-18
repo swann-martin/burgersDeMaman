@@ -1,8 +1,11 @@
 footer {
+  width: 100vw;
   color: whitesmoke;
   text-align: center;
   position: fixed;
   bottom: 0;
-  width: 100%;
   background: #000d16;
+  @media screen and(max-width:600px) {
+    width: 100vw;
+  }
 }

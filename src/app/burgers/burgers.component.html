@@ -1,6 +1,6 @@
-<section>
-  <h1>Nos burgers</h1>
-  <section class="cards">
+<section class="burgers">
+  <h1 class="burgers-title">Nos burgers</h1>
+  <section class="burgers-cards-container">
     <div class="card" *ngFor="let burger of allBurgers">
       <img [src]="burger.picture" alt="fond" />
       <h2>{{ burger.name }}</h2>
