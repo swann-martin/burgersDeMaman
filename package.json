@@ -1,9 +1,10 @@
 {
-  "name": "tp",
+  "name": "burger-de-papa",
   "version": "0.0.0",
+  "license":"MIT",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
+    "start": "node server.js",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
@@ -46,6 +47,7 @@
     "tslint": "~6.1.0"
   },
   "engines": {
-    "node": "14.17"
+    "node": "14.17.5",
+    "npm":"6.14.14"
   }
 }
